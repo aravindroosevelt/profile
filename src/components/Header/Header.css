@@ -1,0 +1,16 @@
+.item {
+  font-size: "2rem";
+  font-weight: 700;
+  color: black !important;
+}
+
+.name {
+  color: "#2d2e32";
+  font-size: "2rem";
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.offcanvas.offcanvas-start {
+  width: 100% !important;
+}
