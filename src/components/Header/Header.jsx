@@ -7,8 +7,8 @@ function Header() {
     <>
       <Navbar
         expand={"md"}
-        className="bg-body-tertiary mb-3 shadow-sm"
-        style={{ height: "10%", fontFamily: "Poppins, sans-serif;" }}
+        className="bg-body-tertiary  shadow-sm"
+        style={{ height: "10%" }}
       >
         <Container fluid>
           <Navbar.Brand href="#" className="name ps-5">

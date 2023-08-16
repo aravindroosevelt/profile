@@ -1,0 +1,108 @@
+.animated-blob {
+  width: 320px;
+  height: 330px;
+  animation: blobBorderRadius 4s infinite alternate;
+  border: 3px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20%;
+}
+
+@keyframes blobBorderRadius {
+  0%,
+  100% {
+    border-radius: 50% 50% 50% 50% / 50% 40% 40% 70%;
+  }
+  50% {
+    border-radius: 30% 70% 70% 30% / 70% 30% 70% 50%;
+  }
+}
+
+.box {
+  border-right: 3px solid grey;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 15%;
+}
+
+.description {
+  color: rgb(85, 85, 85);
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+}
+
+.section-profile {
+  background-color: #f9f9f9;
+}
+
+a {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+a > *:hover {
+  color: #147efb !important;
+}
+
+@media (max-width: 991px) {
+  .section-profile {
+    text-align: center; /* Center align on small screens */
+  }
+  .description {
+    max-width: 100% !important;
+  }
+  .stack {
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .animated-blob {
+    margin-top: 5%;
+  }
+  .box {
+    justify-content: center;
+    border: none;
+  }
+  .icon-group {
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem !important;
+  }
+  .title {
+    margin-top: 5%;
+  }
+}
+
+.stack {
+  color: #2d2e32;
+  font-family: 600;
+  font-size: 17px;
+}
+
+.line {
+  height: 1.5rem;
+  width: 0.1rem;
+  background-color: grey;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-group div {
+  margin-right: 1rem;
+}
+
+.icImg {
+  height: 2rem;
+  width: 2.5rem;
+}
