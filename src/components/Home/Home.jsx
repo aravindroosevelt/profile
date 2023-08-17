@@ -14,10 +14,13 @@ import "./Home.css";
 
 function Home() {
   return (
-    <Container fluid className={"section-profile"}>
-      <div style={{ maxWidth: "80%", minHeight: "90vh", paddingLeft: "8%" }}>
+    <Container
+      fluid
+      className={"section-profile d-flex justify-content-center"}
+    >
+      <div style={{ maxWidth: "80%", minHeight: "90vh" }}>
         <Row>
-          <Col md={12} lg={8}>
+          <Col md={12} lg={8} className="text-justify">
             <div>
               <h1 className="title">
                 Full-Stack Javascript Developer <span>&#128075;&#127996;</span>

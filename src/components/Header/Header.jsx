@@ -7,7 +7,7 @@ function Header() {
     <>
       <Navbar
         expand={"md"}
-        className="bg-body-tertiary  shadow-sm"
+        className="bg-body-tertiary  shadow-sm navBar"
         style={{ height: "10%" }}
       >
         <Container fluid>
