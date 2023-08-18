@@ -16,7 +16,7 @@ function Home() {
   return (
     <Container
       fluid
-      className={"section-profile d-flex justify-content-center"}
+      className={"section-background d-flex justify-content-center"}
     >
       <div style={{ maxWidth: "80%", minHeight: "90vh" }}>
         <Row>
@@ -37,7 +37,6 @@ function Home() {
               <span>
                 <a
                   href="https://www.linkedin.com/in/aravind-kumar-34017a1b3/"
-                  className="text-dark"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -48,7 +47,6 @@ function Home() {
                 <a
                   href="https://github.com/Aravind934"
                   target="_blank"
-                  className="text-dark"
                   rel="noreferrer"
                 >
                   <i class="bi bi-github" />

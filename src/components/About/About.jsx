@@ -19,7 +19,7 @@ function About() {
           lg={12}
           xl={7}
           style={{ maxWidth: "40%" }}
-          className="text-justify ms-5 about-section"
+          className="text-justify  about-section"
         >
           <h6 className="text-primary">
             <b>ABOUT ME</b>

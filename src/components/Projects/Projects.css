@@ -1,0 +1,30 @@
+.project-section {
+  min-height: 90vh;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+  .projects {
+    max-width: 60% !important;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width: 428px) {
+  .projects {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .pro-img {
+    min-height: 1rem !important;
+    height: 13rem !important;
+  }
+}

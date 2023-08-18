@@ -19,7 +19,7 @@ h5 {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .about-section {
     max-width: 100% !important;
   }
@@ -29,6 +29,6 @@ h5 {
 }
 
 .aboutpic {
-  max-width: 526px !important;
-  max-height: 353px !important;
+  max-width: 450px !important;
+  max-height: 310px !important;
 }

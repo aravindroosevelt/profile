@@ -34,21 +34,13 @@
   font-weight: 500;
 }
 
-.section-profile {
-  background-color: #f9f9f9;
-}
-
 a {
   cursor: pointer;
   font-size: 30px;
 }
 
-a > *:hover {
-  color: #147efb !important;
-}
-
 @media (max-width: 991px) {
-  .section-profile {
+  .section-background {
     text-align: center; /* Center align on small screens */
   }
   .description {
