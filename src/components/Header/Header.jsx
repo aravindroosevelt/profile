@@ -1,19 +1,22 @@
 import React from "react";
 import { Nav, Navbar, Container, Offcanvas } from "react-bootstrap";
+import { Link } from "react-scroll";
 import "./Header.css";
 
 function Header() {
+  const navs = ["Home", "About", "Projects", "Contact"];
   return (
     <>
       <Navbar
         expand={"md"}
         className="bg-body-tertiary  shadow-sm navBar"
         style={{ height: "10%" }}
+        collapseOnSelect
+        as="nav"
+        fixed="top"
       >
         <Container fluid>
-          <Navbar.Brand href="#" className="name ps-5">
-            Aravind.dev
-          </Navbar.Brand>
+          <Navbar.Brand className="name ps-5">Aravind.dev</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}
@@ -25,10 +28,20 @@ function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end align-items-center  flex-grow-1 pe-5 item h-50">
-                <Nav.Link href="#Home">Home</Nav.Link>
-                <Nav.Link href="#About">About</Nav.Link>
-                <Nav.Link href="#Projects">Projects</Nav.Link>
-                <Nav.Link href="#Contact">Contact</Nav.Link>
+                {navs.map((item, i) => (
+                  <Link
+                    key={item}
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    offset={item === "Projects" ? 0 : -100}
+                    duration={100}
+                    activeClass="text-primary"
+                    className="fs-6 text-decoration-none ms-2"
+                  >
+                    {item}
+                  </Link>
+                ))}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

@@ -5,7 +5,7 @@ import "./About.css";
 
 function About() {
   return (
-    <Container style={{ height: "80vh", width: "100vw" }}>
+    <Container style={{ height: "80vh", width: "100vw" }} id="About">
       <Row className="d-flex justify-content-center align-items-center h-100 about">
         <Col lg={12} xl={5} className="d-flex justify-content-center">
           <img

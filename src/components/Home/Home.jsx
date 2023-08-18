@@ -17,6 +17,7 @@ function Home() {
     <Container
       fluid
       className={"section-background d-flex justify-content-center"}
+      id="Home"
     >
       <div style={{ maxWidth: "80%", minHeight: "90vh" }}>
         <Row>

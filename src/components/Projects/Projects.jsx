@@ -4,7 +4,7 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="section-background project-section">
+    <div className="section-background project-section" id="Projects">
       <Container style={{ maxWidth: "80%" }}>
         <Row>
           <Col>
